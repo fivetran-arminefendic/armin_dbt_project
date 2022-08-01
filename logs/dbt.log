@@ -1,0 +1,26 @@
+
+
+============================== 2022-08-01 15:47:25.358386 | e8a9d675-03a6-4f09-97bc-0c3f68d8efbb ==============================
+15:47:25.358390 [info ] [MainThread]: Running with dbt=1.1.0
+15:47:25.358828 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/armin.efendic/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_name': 'armin_dbt_project', 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+15:47:25.358898 [debug] [MainThread]: Tracking: tracking
+15:47:25.379425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e2dc30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e80550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e801f0>]}
+15:47:25.380482 [debug] [MainThread]: Starter project path: /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/dbt/include/starter_project
+15:48:59.323738 [info ] [MainThread]: Profile armin_dbt_project written to /Users/armin.efendic/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+15:48:59.324275 [info ] [MainThread]: 
+Your new dbt project "armin_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+15:48:59.324577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e826e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e803d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e825c0>]}

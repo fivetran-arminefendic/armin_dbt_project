@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: strava
+    tables:
+      - name: activities_raw
+      - name: users_raw

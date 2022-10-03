@@ -4,8 +4,8 @@ with stg_activities as (
         name as activity_name,
         sport_type,
         start_date as start_date_utc,
-        distance as distance_meters,
-        ROUND(distance  * 3.28084, 1) as distance_feet,
+        ROUND(distance / 1000, 1) as total_distance_km,
+        ROUND(distance  * 0.000621371, 1) as total_distance_mi,
         ROUND(elapsed_time / 3600, 1) as total_time_hrs,
         ROUND(moving_time / 3600, 1) as moving_time_hrs,
         ROUND(average_speed * 2.23694, 1) as avg_speed_mph,
@@ -23,6 +23,8 @@ with stg_activities as (
         timezone,
         pr_count,
         achievement_count,
+        start_latlng[0] as start_lat,
+        start_latlng[1] as start_lng,
         map
 
     from {{ source('strava', 'activities_raw') }}

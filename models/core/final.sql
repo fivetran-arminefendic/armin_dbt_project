@@ -10,14 +10,13 @@ users as (
 
 final as (
     select 
-        firstname,
-        lastname,
+        name,
         username,
         activity_name,
         sport_type,
         start_date_utc,
-        distance_meters,
-        distance_feet,
+        total_distance_km,
+        total_distance_mi,
         total_time_hrs,
         moving_time_hrs,
         avg_speed_mph,
@@ -35,6 +34,8 @@ final as (
         timezone,
         pr_count,
         achievement_count,
+        start_lat,
+        start_lng,
         map,
         profile_medium
 

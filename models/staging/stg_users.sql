@@ -1,8 +1,7 @@
 with stg_users as (
     select
         id,
-        firstname,
-        lastname,
+        firstname || ' ' || lastname as name,
         username,
         profile_medium
 
